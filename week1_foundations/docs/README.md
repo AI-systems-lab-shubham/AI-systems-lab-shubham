@@ -1,1 +1,1 @@
-Week 1 PDF and notes.
+Week 1 documentation, including foundational PDF, syllabus, and learning plan references.
