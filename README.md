@@ -5,7 +5,7 @@ Week 1 covers system thinking fundamentals for DressUp!: architecture decisions,
 ## Quick links (start here)
 
 ### Production prompt + inputs
-- Production prompt: [daily_outfit_v1.0.txt](prompts/generation/daily_outfit_v1.0.txt)
+- Production prompt: [[daily_outfit_v1.0.txt](prompts/generation/daily_outfit_v1.0.txt)](https://github.com/AI-systems-lab-shubham/AI-systems-lab-shubham/blob/main/week1_foundations/prompts/generation/daily_outfit_v1.0.txt)
 - Sample input bundle: [daily_outfit_sample_input.json](prompts/test_inputs/daily_outfit_sample_input.json)
 
 ### Prompt testing (evidence)
