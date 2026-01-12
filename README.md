@@ -1,27 +1,37 @@
-# Hi, I’m Shubham
+# Week 1: Foundations
 
-### AI Systems Architect • No Code Engineer • Product Strategist  
-Creator of the 16 Week AI Systems Lab
+Week 1 covers system thinking fundamentals for DressUp!: architecture decisions, ERD/DFDs, documentation structure, and a production prompt with test evidence.
 
-I build applied AI systems using:
-- Structured system architecture  
-- Entity and data modeling  
-- Prompt engineering  
-- No code tools and automation  
-- Architecture decision records  
-- Real-world product strategy  
+## Quick links (start here)
 
-### Current Work  
-**AI Systems Lab: A 16 Week research and development journey**  
-Covering foundations, architecture, prompt engineering, no code implementation, and advanced AI workflows.
+### Production prompt + inputs
+- Production prompt: [daily_outfit_v1.0.txt](prompts/generation/daily_outfit_v1.0.txt)
+- Sample input bundle: [daily_outfit_sample_input.json](prompts/test_inputs/daily_outfit_sample_input.json)
 
-### Focus Areas  
-- AI system design  
-- Applied prompt engineering  
-- No code MVP development  
-- Data flows and architecture  
-- Rigor, documentation, and reproducible workflows
+### Prompt testing (evidence)
+- Testing harness (Claude Opus 4.5): [daily_outfit_prompt_test_harness_opus45.md](prompts/testing_harnesses/daily_outfit_prompt_test_harness_opus45.md)
+- Test report (results): [DressUp_Prompt_Test_Report_v1.md](prompts/prompt_testing_reports/DressUp_Prompt_Test_Report_v1.md)
 
-### Connect  
-LinkedIn: https://www.linkedin.com/in/shubham-ghodgaonkar-cssgb-961081127/
-Email: ghodgaonkarshubham@gmail.com
+## Folder map
+
+- `adr/`  
+  Architecture Decision Records (why choices were made).
+- `diagrams/`  
+  Exports for system architecture, ERD, and DFDs.
+- `docs/`  
+  Week 1 syllabus and supporting documentation.
+- `prompts/`  
+  Prompt library standards + prompt artifacts.
+
+## What the daily outfit prompt does
+
+Given a JSON input bundle (wardrobe + preferences + weather + context + history), it returns **valid JSON only** with:
+- 1 primary outfit
+- 2 backup outfits
+- 1 budget / low-effort option
+- a concise explanation, warnings, and assumptions
+- scored dimensions with weights that sum to ~1.0
+
+## Status
+
+Week 1 prompt testing is complete and the daily_outfit prompt is production-ready based on the included test report.
